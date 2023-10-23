@@ -13,8 +13,8 @@ RUN apt-get update && apt-get install -y sudo \
     ffmpeg \
     libimage-exiftool-perl
 
-COPY ./requirements_my.txt .
-RUN pip3 install -r requirements_my.txt
+COPY ./requirements.txt .
+RUN pip3 install -r requirements.txt
 
 
 RUN addgroup --gid $GROUP_ID $USER
