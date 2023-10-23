@@ -1,6 +1,6 @@
 #!/bin/bash
 # Create a "tag" or name for the image
-docker_tag=aicregistry:5000/${USER}:image-unet
+docker_tag=aicregistry:5000/${USER}:dockertest
 
 # build the image calling on your Dockerfile
 docker build . -f Dockerfile \
